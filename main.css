@@ -65,17 +65,27 @@ footer {
   margin: 16px 32px;
 }
 
-@media screen and(max-width:400px) {
-  .header {
+@media screen and (max-width: 600px) {
+  header {
     background-color: #333333;
     color: #ffffff;
     font-size: 20px;
   }
-
+  footer {
+    height: 30px;
+  }
   .container {
+    height: calc(100vh - 124px);
     flex-direction: column-reverse;
   }
-
+  .left {
+    flex-direction: column;
+    font-size: 20px;
+    flex: 100%;
+  }
+  .box {
+    font-size: 28px;
+  }
   .right {
     flex-grow: 0;
     flex-basis: 0;
