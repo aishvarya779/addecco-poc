@@ -63,6 +63,7 @@ footer {
   border-radius: 5px;
   font-size: 20px;
   margin: 16px 32px;
+  box-shadow: 0px 4px 0px 0px #2B8EAD;
 }
 
 @media screen and (max-width: 375px), (max-width: 600px) {
