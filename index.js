@@ -22,7 +22,6 @@ const appendCards = arr => {
     node.appendChild(textnode);
     selectedItem.appendChild(node);
   });
-  console.log(colors);
 };
 
 const shuffleCards = () => {
