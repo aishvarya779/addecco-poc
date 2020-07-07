@@ -25,7 +25,14 @@ const appendCards = arr => {
 };
 
 const shuffleCards = () => {
-  let shuffledArray = colors;
+  let shuffledArray = [...colors];
+  shuffledArray.forEach((item, index) => {
+    const rand = Math.floor(Math.random() * (shuffledArray.length - 1));
+    [shuffledArray[index], shuffledArray[rand]] = [
+      shuffledArray[rand],
+      shuffledArray[index]
+    ];
+  });
   shuffledArray.sort(() => Math.random() - 0.5);
   appendCards(shuffledArray);
 };
